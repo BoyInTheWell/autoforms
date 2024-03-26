@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Testing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container-fluid p-5">
+    <p class="display-3">This is text</p>
+    <div class="row mb-5">
+      <div class="col-sm-6 col-xxl-8 border-bottom border-secondary lead">Primeira Coluna</div>
+      <div class="col-sm-6 col-xxl-4 border-bottom border-secondary lead">Segunda Coluna</div>
+    </div>
+  
+    <div class="my-5"></div>
+      
+    <form>
+      <div class="row">
+        <div class="col-md-4">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <div class="input-group ">
+            <input type="text" class="form-control" id="inputEmail" placeholder="Enter your email">
+            <div class="input-group-text">@pogustgoodhead.com</div>
+          </div>
+          <small id="emailHelp" class="form-text text-muted">Insert only the start of your corporate email.</small>
+        </div>
+        <div class="col-md-3">
+          <label for="inputSelect" class="form-label">Please select something</label>
+          <select class="form-select" id="inputSelect">
+            <option value="Option 1">Option 1</option>
+            <option value="Cats">Cats</option>
+            <option value="Potatoes">Potatoes</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="inputAddress" class="form-label">Physical address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address">
+          <small id="emailHelp" class="form-text text-muted">e.g. 123 Main Street, Anytown, USA 12345</small>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <label for="inputIntention" class="form-label">Please inform your intention</label>
+          <select class="form-select" id="inputIntention">
+            <option value="Happiness">Happiness</option>
+            <option value="World Domination">World Domination</option>
+            <option value="None">None</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="inputDatepicker" class="form-label">Select a date</label>
+          <div class="input-group">
+            <input type="text" class="form-control datepicker" id="inputDatepicker">
+            <span class="input-group-text"><i class="bi bi-calendar-event-fill"></i></span>
+          </div>  
+        </div>
+       
+        <div class="col">
+          Please select what best fits you
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="radioInput" id="radio1" value="radioOption4">
+            <label class="form-check-label" for="radio1">A bowl of soup</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="radioInput" id="radio2" value="radioOption2">
+            <label class="form-check-label" for="radio2">A piece of wood</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="radioInput" id="radio3" value="radioOption3">
+            <label class="form-check-label" for="radio3">The last breath of a fish</label>
+          </div>
+        </div>
+
+        <div class="col">
+          Please select the things that least fit you
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox1" value="option4">
+            <label class="form-check-label" for="checkbox1">A scraped knee</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox2" value="option2">
+            <label class="form-check-label" for="checkbox2">Bicicles, in general</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox3" value="option3">
+            <label class="form-check-label" for="checkbox3">The constant awareness of the fish</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox4" value="option1">
+            <label class="form-check-label" for="checkbox4">That sound that makes when you use a knife and fork to scratch a glass plate</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox5" value="option5">
+            <label class="form-check-label" for="checkbox5">Tea</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+          <label class="form-label" for="textArea">Any saucy details you wanna include</label>
+          <textarea class="form-control" rows="4" id="textArea" placeholder="Enter details"></textarea>
+        </div>
+      </div>
+
+    <div class="row justify-content-center">
+      <button type="submit" class="btn btn-primary mt-3 col-md-3">Submit</button>
+    </div>
+      
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
